@@ -1,5 +1,3 @@
-var fs = require('fs');
-
 
 window.addEventListener("load", (event) => {
     const grid = document.getElementById("grid");
