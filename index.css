@@ -1,0 +1,16 @@
+#red {
+    /* background-color: red; */
+}
+#grid {
+
+}
+.row {
+
+}
+.image {
+    background-color: blue;
+    width: 10em;
+    height: 10em;
+    margin: 1em;
+    display: inline-grid;
+}
