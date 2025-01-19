@@ -1,10 +1,49 @@
+#banner {
+    text-align: center;
+    font-size: 2em;
+}
+
 #grid {
     text-align: center;
 }
 .row {}
-.image {
-    width: 20em;
-    height: 20em;
-    margin: .5em;
-    display: inline-grid;
+
+.image{
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+@media (65em <= width) {
+    .image {
+        width: 20em;
+        height: 20em;
+        margin: .5em;
+        display: inline-grid;
+    }
+}
+
+@media (65em > width) {
+    html, body {
+        margin: 0;
+        height: 100%;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    .row {
+        text-align: center;
+        width: 100%;
+    }
+    .image {
+        /* width: 20em;
+        height: 20em;
+        margin-right: 20%;
+        margin-left: 20%; */
+        width: 100%;
+        overflow: hidden;
+        height: 0;
+        padding-top: 100%;
+    }
+
 }

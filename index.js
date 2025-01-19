@@ -36,8 +36,9 @@ function insert_row(grid) {
 }
 
 function insert_img(url, row) {
-    const img = document.createElement("img");
-    img.src = url;
+    const img = document.createElement("div");
+    // img.src = url;
+    img.style.backgroundImage=`url(${url})`
     img.classList.add("image");
     row.appendChild(img);
 }
